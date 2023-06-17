@@ -1,9 +1,8 @@
+#include <algorithm>
 #include <vector>
 
-using namespace std;
-
 template<typename T>
-void bubble_sort(vector<T>& vec) {
+void bubble_sort(std::vector<T>& vec) {
   size_t len = vec.size();
   
   // 한 번 반복할 때마다 요소 하나가 정렬됨
@@ -15,7 +14,7 @@ void bubble_sort(vector<T>& vec) {
     for (size_t j = 0; j < i; j++) {
       if (vec[j] > vec[j + 1]) {
         // 앞 요소가 크다면 교환
-        swap(vec[j], vec[j + 1]);
+        std::swap(vec[j], vec[j + 1]);
         sorted = false;
       }
     }

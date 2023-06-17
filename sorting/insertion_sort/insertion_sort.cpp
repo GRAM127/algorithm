@@ -1,9 +1,8 @@
+#include <algorithm>
 #include <vector>
 
-using namespace std;
-
 template<typename T>
-void insertion_sort(vector<T>& vec) {
+void insertion_sort(std::vector<T>& vec) {
   size_t len = vec.size();
 
   // 한 번 반복할 때마다 요소 하나가 정렬됨
